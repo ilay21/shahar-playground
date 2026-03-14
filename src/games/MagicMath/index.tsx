@@ -78,7 +78,7 @@ export default function MagicMath({ onComplete }: MagicMathProps) {
         <ConfettiEffect trigger={true} />
         <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 text-center max-w-md">
           <h2 className="text-4xl font-heading text-white mb-4">כל הכבוד! 🎉</h2>
-          <p className="text-2xl text-white mb-4">{correct} מתוך {TOTAL_QUESTIONS} נכון!</p>
+          <p dir="ltr" className="text-2xl text-white mb-4">{correct} מתוך {TOTAL_QUESTIONS} נכון!</p>
           <div className="text-5xl mb-6">
             {Array.from({ length: earnedStars }, () => '⭐').join('')}
           </div>
@@ -106,7 +106,7 @@ export default function MagicMath({ onComplete }: MagicMathProps) {
             style={{ width: `${((questionIndex) / TOTAL_QUESTIONS) * 100}%` }}
           />
         </div>
-        <p className="text-white/80 text-center mt-1 text-lg">{questionIndex + 1} / {TOTAL_QUESTIONS}</p>
+        <p dir="ltr" className="text-white/80 text-center mt-1 text-lg">{questionIndex + 1} / {TOTAL_QUESTIONS}</p>
       </div>
 
       {/* Question */}
@@ -118,7 +118,7 @@ export default function MagicMath({ onComplete }: MagicMathProps) {
           ))}
         </div>
 
-        <div className="text-5xl md:text-7xl font-heading text-white text-center">
+        <div dir="ltr" className="text-5xl md:text-7xl font-heading text-white text-center">
           {question.a} {question.op} {question.b} = ?
         </div>
 
