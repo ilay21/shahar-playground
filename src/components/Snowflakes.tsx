@@ -19,7 +19,7 @@ export default function Snowflakes() {
           key={f.id}
           className="absolute animate-snowfall"
           style={{
-            left: `${f.left}%`,
+            insetInlineStart: `${f.left}%`,
             top: '-5%',
             animationDelay: `${f.delay}s`,
             animationDuration: `${f.duration}s`,
