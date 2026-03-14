@@ -133,10 +133,10 @@ export default function DrawingCanvas({ onComplete }: DrawingCanvasProps) {
   }
 
   return (
-    <div className="h-screen bg-gabby-light flex flex-col overflow-hidden" dir="ltr">
+    <div className="h-screen bg-gabby-light flex flex-col overflow-hidden">
       <div className="flex items-center justify-between p-2 bg-white/80 shadow-sm">
         <BackButton />
-        <h2 className="font-heading text-gabby-purple text-xl mr-16">🎨 ציור חופשי</h2>
+        <h2 className="font-heading text-gabby-purple text-xl me-16">🎨 ציור חופשי</h2>
         <div className="flex gap-2">
           <button
             onClick={handleSave}
